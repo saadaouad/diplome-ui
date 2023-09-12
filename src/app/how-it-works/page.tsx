@@ -1,13 +1,10 @@
 import Image from "next/image";
 
-export default function Home() {
+const HowItWorks = () => {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between gap-x-4">
       <section className="w-2/4">
-        <h1 className="text-5xl font-medium">Welcome to Verify!</h1>
-        <p className="text-lg mt-3">
-          Get a certificate of one of your diplomas easily.
-        </p>
+        <h1 className="text-5xl font-medium">How it works?</h1>
         <p className="text-lg mt-3">
           Ardeo, mihi credite, Patres conscripti (id quod vosmet de me
           existimatis et facitis ipsi) incredibili quodam amore patriae, qui me
@@ -20,14 +17,16 @@ export default function Home() {
       </section>
       <div className="w-2/4">
         <Image
-          src="/certificate.svg"
+          src="/how-it-works.png"
           height={0}
           width={0}
           sizes="100vw"
-          style={{width: "100%", height: "60vh"}}
-          alt="Certificate"
+          style={{width: "100%", height: "100%"}}
+          alt="Home"
         />
       </div>
     </div>
   );
-}
+};
+
+export default HowItWorks;
